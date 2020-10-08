@@ -1,0 +1,9 @@
+version: "2"
+services:
+    ansible_tower:
+        image: ansible_tower
+        ports:
+            - "8022:22"
+        restart: "no"
+        volumes:
+            - ./ansible_tower/inventory:/etc/ansible/
