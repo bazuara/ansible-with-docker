@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
     ansible_tower:
         image: ansible_tower
@@ -7,3 +7,5 @@ services:
         restart: "no"
         volumes:
             - ./ansible_tower/inventory:/etc/ansible/
+        container_name: "ansible_tower"
+        hostname: "ansible_tower"
