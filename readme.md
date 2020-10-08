@@ -1,6 +1,14 @@
 ## Learn ansible with docker
 
-This labs consists of two kinds of containers
+![](./srcs/png_internationalfleet_logo.png)
+
+(Read with Mazer Rackham´s voice)
+
+Welcome to the International Fleet officer trainer simulator! Where we thin out the future officers from the herd! We will prepare you to send commands across the galaxy to multiple starfigthers at the same time, to defeat those formic b#stards!
+
+(Lore will continue)
+
+This labs consists of two kinds of containers:
 
  * Ansible_tower: To give commands
  * Starships: To receive commands across the galaxy
