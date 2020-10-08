@@ -15,8 +15,12 @@ read -p "Option: (1/2/3)" num
 case $num in
 	[1]* ) clear; echo "option 1 selected";\
 		docker build ./ansible_tower/ -t ansible_tower;\
+		docker build ./starfighter/bajovnick -t bajovnick;\
 		docker-compose -f ./composes/docker-compose-lvl1.yaml up -d;;
 	[2]* ) clear; echo -e "\n\n\nThere´s no option 2!\nEither fight or flight!";;
-	[3]* ) clear; docker stop ansible_tower; echo "Goodbye then you f#king deserter!";;
+	[3]* ) clear;\
+		docker stop ansible_tower;\
+		docker stop bajovnick;\
+	   	echo "Goodbye then you f#king deserter!";;
 esac
 read -p "Press enter to exit"

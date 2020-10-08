@@ -9,3 +9,13 @@ services:
             - ./ansible_tower/inventory:/etc/ansible/
         container_name: "ansible_tower"
         hostname: "ansible_tower"
+
+    starfigther_bajovnick:
+        image: bajovnick
+        expose:
+            - "22"
+            - "80"
+        restart: "no"
+        container_name: "bajovnick"
+        hostname: "bajovnick"
+
