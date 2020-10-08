@@ -6,7 +6,7 @@ services:
             - "8022:22"
         restart: "no"
         volumes:
-            - ./ansible_tower/inventory:/etc/ansible/
+            - ./inventory:/etc/ansible/
         container_name: "ansible_tower"
         hostname: "ansible_tower"
 
