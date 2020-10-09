@@ -24,15 +24,15 @@ This labs consists of two kinds of containers:
  	- [ ] Working with ~~starfighter 3~~ Makarhu
  	- [x] Find cool names for starfigthers
  - [x] Create some cool asci art
- - [ ] Create dificulty levels
+ - [x] Create dificulty levels
  	- [x] Lvl 0. 1 Remote ship, same ship model
 	- [x] lvl 1. 3 remote ship, same ship model
 	- [ ] lvl 2. 3 remote ship, different ship model
 	- [ ] lvl 3. 9 remote ship, different ship model in squads
- - [ ] Integrate dificulty levels in launcher
+ - [x] Integrate dificulty levels in launcher
  - [ ] Integrate scripts to generate and deploy ssh keys
  	- [ ] script for lvl.0
  	- [ ] script for lvl.1
  	- [ ] script for lvl.2
  	- [ ] script for lvl.3
- - [ ] Narrative FFS!!!!
+ - [ ] Create exercises and narrative FFS!!!!
