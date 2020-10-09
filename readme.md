@@ -14,15 +14,20 @@ This labs consists of two kinds of containers:
  * Starships: To receive commands across the galaxy
 
 ### To-do
- - [x] Create ansiblele_tower images
- - [ ] Create starships images
+ - [x] Create ansible_philote image
  - [x] Create launcher script
- 	- [ ] Build images and launch docker-compose
+ 	- [x] Build images and launch docker-compose
  - [x] Create docker-compose.yaml
  	- [x] Working with ansible_philote
- 	- [ ] Working with starfighter 1
- 	- [ ] Working with starfighter 2
- 	- [ ] Working with starfighter 3
- 	- [ ] Find cool names for starfigthers
+ 	- [x] Working with ~~starfighter 1~~ Bajovnick
+ 	- [ ] Working with ~~starfighter 2~~ Herodotus
+ 	- [ ] Working with ~~starfighter 3~~ Makarhu
+ 	- [x] Find cool names for starfigthers
  - [x] Create some cool asci art
+ - [ ] Create dificulty levels
+ 	- [ ] Lvl 0. 1 Remote ship, same ship model
+	- [ ] lvl 1. 3 remote ship, same ship model
+	- [ ] lvl 2. 3 remote ship, different ship model
+	- [ ] lvl 3. 9 remote ship, different ship model in squads
+ - [ ] Integrate dificulti levels in launcher
  - [ ] Narrative FFS!!!!
