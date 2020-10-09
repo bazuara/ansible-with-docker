@@ -1,14 +1,14 @@
 version: "3"
 services:
-    ansible_tower:
-        image: ansible_tower
+    ansible_philote:
+        image: ansible_philote
         ports:
             - "8022:22"
         restart: "no"
         volumes:
-            - ./inventory:/etc/ansible/
-        container_name: "ansible_tower"
-        hostname: "ansible_tower"
+            - ../inventory:/etc/ansible/
+        container_name: "ansible_philote"
+        hostname: "ansible_philote"
 
     starfigther_bajovnick:
         image: bajovnick
