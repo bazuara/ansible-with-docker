@@ -1,0 +1,21 @@
+version: "3"
+services:
+    ansible_philote:
+        image: ansible_philote
+        ports:
+            - "8022:22"
+        restart: "no"
+        volumes:
+            - ../etc_ansible:/etc/ansible/
+        container_name: "ansible_philote"
+        hostname: "ansible_philote"
+
+    starfigther_bajovnick:
+        image: bajovnick
+        expose:
+            - "22"
+            - "80"
+        restart: "no"
+        container_name: "bajovnick"
+        hostname: "bajovnick"
+

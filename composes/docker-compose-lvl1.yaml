@@ -6,16 +6,33 @@ services:
             - "8022:22"
         restart: "no"
         volumes:
-            - ../inventory:/etc/ansible/
+            - ../etc_ansible:/etc/ansible/
         container_name: "ansible_philote"
         hostname: "ansible_philote"
 
-    starfigther_bajovnick:
+    starfigther_bajovnick_1:
         image: bajovnick
         expose:
             - "22"
             - "80"
         restart: "no"
-        container_name: "bajovnick"
-        hostname: "bajovnick"
+        container_name: "bajovnick_1"
+        hostname: "bajovnick_1"
 
+    starfigther_bajovnick_2:
+        image: bajovnick
+        expose:
+            - "22"
+            - "80"
+        restart: "no"
+        container_name: "bajovnick_2"
+        hostname: "bajovnick_2"
+
+    starfigther_bajovnick_3:
+        image: bajovnick
+        expose:
+            - "22"
+            - "80"
+        restart: "no"
+        container_name: "bajovnick_3"
+        hostname: "bajovnick_3"

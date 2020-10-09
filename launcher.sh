@@ -7,20 +7,29 @@ cat ./srcs/ascii_starfleet_logo.txt
 #then
 #    exit 1
 #fi
-echo "Welcome! Please, select one option:\n"
-echo "1. Deploy ansible tower and Starfigthers.\n"
-echo "2. no option avalible right now\n"
-echo "3. Desert and destroy!\n"
-read -p "Option: (1/2/3)" num
+echo -e "Welcome! Please, select one option:\n"
+echo -e "0. Deploy 1 ansible philote and 1 Starfigther. (Lvl. 0)\n"
+echo -e "1. Deploy 1 ansible philote and 3 equals Starfigthers. (Lvl. 1)\n"
+echo -e "2. Deploy 1 ansible philote and 3 different Starfigthers . (Lvl. 2)\n"
+echo -e "3. Deploy 1 ansible philote and 9 different Starfigthers, 3 squads. (Lvl. 3)\n"
+echo -e "9. Desert and destroy!\n"
+read -p "Option: (0/1/2/3/9)" num
 case $num in
-	[1]* ) clear; echo "option 1 selected";\
+	[0]* ) clear; echo -e "option 0 selected";\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
-		docker-compose -f ./composes/docker-compose-lvl1.yaml up -d;;
-	[2]* ) clear; echo -e "\n\n\nThere´s no option 2!\nEither fight or flight!";;
-	[3]* ) clear;\
+		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d --remove-orphans;;
+	[1]* ) clear; echo -e "option 1 selected";\
+		docker build ./ansible_philote/ -t ansible_philote;\
+		docker build ./starfighter/bajovnick -t bajovnick;\
+		docker-compose -f ./composes/docker-compose-lvl1.yaml up -d --remove-orphans;;
+	[4]* ) clear; echo -e "\n\n\nThere´s no option 4!\nEither fight or flight!";;
+	[9]* ) clear;\
 		docker stop ansible_philote;\
 		docker stop bajovnick;\
-	   	echo "Goodbye then you f#king deserter!";;
+		docker stop bajovnick_1;\
+		docker stop bajovnick_2;\
+		docker stop bajovnick_3;\
+	   	echo -e "Goodbye then you f#king deserter!";;
 esac
 read -p "Press enter to exit"
