@@ -22,6 +22,11 @@ And follow the on-screen instructions.
 
 In every ansible commander machine, the persisten folder will be /etc/ansible, and it will be stored outside the containers, in your local file etc_ansible/lvl*
 
+## Exercises subjects:
+
+
+[Level 0](./srcs/subject_lvl0.md)
+
 ## This is still a work in progress
 
 There is some stuff to do yet...

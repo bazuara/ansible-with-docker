@@ -20,7 +20,7 @@ case $num in
 		docker build ./starfighter/bajovnick -t bajovnick;\
 		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d --remove-orphans;
 		clear; \
-		cat -e ./srcs/practice_lvl0.txt;;
+		cat ./srcs/subject_lvl0.md;;
 	[1]* ) clear; echo -e "option 1 selected";\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
