@@ -1,13 +1,13 @@
 Welcome to your first exercise!
-In this level, ypu ar going to learn to connect and install software from the captains ship to a Bajovnick type starfighter.
+In this level, you are going to learn to connect and install software from the captains ship to a Bajovnick type starfighter.
 --Bajovnick lore goes here--
 These are the steps you are going to need to reproduce:
 
 	* Connect to your captains console (ssh ender@localhost -p 8022) Remember, your ultra secure
 	  military-grade encrypted user:password is ender:ender
 	* Generate your captains credentials (ssh-key-gen).
-	* Send your credentials to the commanded ships (ssh-copy-id).
-	* Test secure connections (ssh-without a password).
+	* Send your credentials to the commanded ships (ssh-copy-id ender@bajovnick).
+	* Test secure connections (ssh ender@bajovnick without a password).
 	* As the Bajovnick class ships are mainly communications ships, you need to command the ship to
 	  relay and broadcast information signals (Install and start an nginx server)
 	* To end your first assignment, you need to communicate the proper message as
