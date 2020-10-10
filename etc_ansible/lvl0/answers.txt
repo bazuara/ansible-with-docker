@@ -1,0 +1,7 @@
+#!/bin/bash
+# answers for exercise lvl 0
+ansible fleet -m ping -u ender
+ansible fleet -m setup -u ender
+ansible fleet -m yum -a 'name=nginx state=present' -become -u ender -K
+ansible fleet -m shell -a 'rm /usr/share/nginx/html/index.html' -u ender -become -K
+ansible fleet -m shell -a 'ln -s /samples/index.html /usr/share/nginx/html/index.html' -u ender -become -K

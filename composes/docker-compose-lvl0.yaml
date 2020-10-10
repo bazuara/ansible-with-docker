@@ -14,7 +14,8 @@ services:
         image: bajovnick
         expose:
             - "22"
-            - "80"
+        ports:
+          - "8081:80"
         restart: "no"
         container_name: "bajovnick"
         hostname: "bajovnick"
