@@ -18,8 +18,9 @@ case $num in
 	[0]* ) clear; echo -e "option 0 selected";\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
-		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d --remove-orphans;;
-		clear && cat -e ./srcs/practice_lvl0.txt;\
+		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d --remove-orphans;
+		clear; \
+		cat -e ./srcs/practice_lvl0.txt;;
 	[1]* ) clear; echo -e "option 1 selected";\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
@@ -27,10 +28,10 @@ case $num in
 	[4]* ) clear; echo -e "\n\n\nThere´s no option 4!\nEither fight or flight!";;
 	[9]* ) clear;\
 		docker stop ansible_philote;\
-		docker stop bajovnick;\
-		docker stop bajovnick_1;\
-		docker stop bajovnick_2;\
-		docker stop bajovnick_3;\
+		docker stop bajovnick 2> /dev/null;\
+		docker stop bajovnick_1 2> /dev/null;\
+		docker stop bajovnick_2  2> /dev/null;\
+		docker stop bajovnick_3 2> /dev/null;\
 	   	echo -e "Goodbye then you f#king deserter!";;
 esac
 read -p "Press enter to exit"
