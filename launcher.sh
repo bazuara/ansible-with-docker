@@ -16,10 +16,10 @@ echo -e "9. Desert and destroy!\n"
 read -p "Option: (0/1/2/3/9)" num
 case $num in
 	[0]* ) clear; echo -e "option 0 selected";\
-		cat -e ./srcs/practice_lvl0.txt;\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
 		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d --remove-orphans;;
+		clear && cat -e ./srcs/practice_lvl0.txt;\
 	[1]* ) clear; echo -e "option 1 selected";\
 		docker build ./ansible_philote/ -t ansible_philote;\
 		docker build ./starfighter/bajovnick -t bajovnick;\
