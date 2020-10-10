@@ -13,6 +13,19 @@ This labs consists of two kinds of containers:
  * ansible_philote: To give commands
  * Starships: To receive commands across the galaxy
 
+To start run in a terminal window:
+
+``` 
+bash ./launcher.sh
+```
+And follow the on-screen instructions.
+
+In every ansible commander machine, the persisten folder will be /etc/ansible, and it will be stored outside the containers, in your local file etc_ansible/lvl*
+
+## This is still a work in progress
+
+There is some stuff to do yet...
+
 ### To-do
  - [x] Create ansible_philote image
  - [x] Create launcher script
@@ -24,6 +37,10 @@ This labs consists of two kinds of containers:
  	- [ ] Working with ~~starfighter 3~~ Makarhu
  	- [x] Find cool names for starfigthers
  - [x] Create some cool asci art
+ - [ ] Create starfighter structures
+ 	- [x] Bajovnick (HTML)
+	- [ ] Herodotus (Databases)
+	- [ ] Makarhu (User tools)
  - [x] Create dificulty levels
  	- [x] Lvl 0. 1 Remote ship, same ship model
 	- [x] lvl 1. 3 remote ship, same ship model

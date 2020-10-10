@@ -6,7 +6,7 @@ services:
             - "8022:22"
         restart: "no"
         volumes:
-            - ../etc_ansible:/etc/ansible/
+            - ../etc_ansible/lvl0:/etc/ansible/
         container_name: "ansible_philote"
         hostname: "ansible_philote"
 

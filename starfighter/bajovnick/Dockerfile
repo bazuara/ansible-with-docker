@@ -22,8 +22,12 @@ RUN echo 'ender:ender' | chpasswd
 RUN yum install -y sudo
 RUN usermod -aG wheel ender
 
+# Create folder structure
+RUN mkdir /samples
+RUN echo 'Starfighter Bajovnick reporting for dutty sir' > /samples/index.html
+
 # expose ssh port
-EXPOSE 22
+EXPOSE 22 80
 
 # Run SSH daemon
 CMD ["/usr/sbin/sshd", "-D"]
