@@ -53,7 +53,7 @@ There is some stuff to do yet...
 	- [ ] lvl 3. 9 remote ship, different ship model in squads
  - [x] Integrate dificulty levels in launcher
  - [ ] Integrate scripts to generate and deploy ssh keys
- 	- [ ] script for lvl.0
+ 	- [x] script for lvl.0
  	- [ ] script for lvl.1
  	- [ ] script for lvl.2
  	- [ ] script for lvl.3
