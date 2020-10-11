@@ -16,7 +16,9 @@ echo -e "9. Desert and destroy!\n"
 read -p "Option: (0/1/2/3/9)" num
 case $num in
 	[0]* ) clear; echo -e "Option 0 selected.\nWe will create the containers.\nPlease, be patient, this could take some time";\
+		echo -e "Building Ansible_philote...\n";\
 		docker build ./ansible_philote/ -t ansible_philote > /dev/null;\
+		echo -e "Building Bajovnick...\n";\
 		docker build ./starfighter/bajovnick -t bajovnick > /dev/null;\
 		docker-compose -f ./composes/docker-compose-lvl0.yaml up -d \
 	   	--remove-orphans > /dev/null;
