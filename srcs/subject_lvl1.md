@@ -16,6 +16,8 @@ Preparation:
 - Generate your captains credentials (ssh-keygen).
 - Send your credentials to the commanded ships (ssh-copy-id ender@bajovnick 1, 2, 3).
 - Test secure connections (ssh ender@bajovnick 1, 2 and 3 without a password).
+- For your convenience, there is a script to automate this task in /scripts inside
+  your commander ship
 
 Subject:
 
