@@ -56,7 +56,7 @@ There is some stuff to do yet...
  - [x] Integrate dificulty levels in launcher
  - [ ] Integrate scripts to generate and deploy ssh keys
  	- [x] script for lvl.0
- 	- [ ] script for lvl.1
+ 	- [x] script for lvl.1
  	- [ ] script for lvl.2
  	- [ ] script for lvl.3
  - [ ] Create exercises and narrative FFS!!!!
