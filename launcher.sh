@@ -24,10 +24,18 @@ case $num in
 	   	--remove-orphans > /dev/null;
 		clear; \
 		cat ./srcs/subject_lvl0.md;;
-	[1]* ) clear; echo -e "option 1 selected";\
-		docker build ./ansible_philote/ -t ansible_philote;\
-		docker build ./starfighter/bajovnick -t bajovnick;\
-		docker-compose -f ./composes/docker-compose-lvl1.yaml up -d --remove-orphans;;
+	[1]* ) clear; echo -e "option 1 selected.\nWe will create the containers.\nPlease, be patient, this could take some time";\
+		echo -e "Building Ansible_philote...\n";\
+		docker build ./ansible_philote/ -t ansible_philote > /dev/null;\
+		echo -e "Building Bajovnick...\n";\
+		docker build ./starfighter/bajovnick -t bajovnick > /dev/null;\
+		docker-compose -f ./composes/docker-compose-lvl1.yaml up -d \
+	   	--remove-orphans > /dev/null;
+		clear; \
+		cat ./srcs/subject_lvl1.md;;
+		# docker build ./ansible_philote/ -t ansible_philote;\
+		# docker build ./starfighter/bajovnick -t bajovnick;\
+		#docker-compose -f ./composes/docker-compose-lvl1.yaml up -d --remove-orphans;;
 	[4]* ) clear; echo -e "\n\n\nThere´s no option 4!\nEither fight or flight!";;
 	[9]* ) clear;\
 		docker stop ansible_philote;\
