@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 cat ./srcs/ascii_starfleet_logo.txt
-echo "Welcome to the starship federation training program!\n"
+echo -e "Welcome to the starship federation training program!\n"
 read -p "Press any key to continue" -n 1 -r
 clear
 echo -e "Welcome! Please, select one option:\n"
