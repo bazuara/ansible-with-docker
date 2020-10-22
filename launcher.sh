@@ -2,7 +2,7 @@
 clear
 cat ./srcs/ascii_starfleet_logo.txt
 echo "Welcome to the starship federation training program!\n"
-read -p "Are you sure you want to enroll? (Yy/Nn) " -n 1 -r
+read -p "Press any key to continue" -n 1 -r
 clear
 echo -e "Welcome! Please, select one option:\n"
 echo -e "0. Deploy 1 ansible philote and 1 Starfigther. (Lvl. 0)\n"
