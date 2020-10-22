@@ -24,6 +24,7 @@ Subject:
 - As the Bajovnick class ships are mainly communications ships, you need to
   command the ship to relay and broadcast information signals. All of the 
   followings orders should be completed:
+
   	- For security reasons, disable the ssh-login with password 
 	  (lineinfile module) 
 	- Ping the Bajovnick ship 
@@ -42,11 +43,14 @@ Subject:
 	- Start the nginx server.
 
 - No single command will be allowed, you need to reproduce all the instructions 
-  *within a single playbook*.
+  **within a single playbook**.
+
+- **No key should be pressed after runing your playbook**, so figure out a way to 
+  secure pass the password
 
 - No answer file will be provided this time, it either works or it doesn´t, 
-  the life of the crews depend´s on your success.
-
+  **the life of the ships crews depend´s on your success.**
+  
 - This is the last time you will receive module names, this is the real life soldier!
 
 - To end your second assignment, you need to communicate the proper message as
