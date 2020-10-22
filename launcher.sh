@@ -1,12 +1,9 @@
 #!/bin/bash
 clear
 cat ./srcs/ascii_starfleet_logo.txt
-#echo "Welcome to the starship federation training program!\n"
-#read -p "Are you sure you want to enroll? (Yy/Nn) " -n 1 -r
-#if [[ ! $REPLY =~ ^[Yy]$ ]]
-#then
-#    exit 1
-#fi
+echo "Welcome to the starship federation training program!\n"
+read -p "Are you sure you want to enroll? (Yy/Nn) " -n 1 -r
+clear
 echo -e "Welcome! Please, select one option:\n"
 echo -e "0. Deploy 1 ansible philote and 1 Starfigther. (Lvl. 0)\n"
 echo -e "1. Deploy 1 ansible philote and 3 equals Starfigthers. (Lvl. 1)\n"
@@ -38,7 +35,7 @@ case $num in
 		#docker-compose -f ./composes/docker-compose-lvl1.yaml up -d --remove-orphans;;
 	[4]* ) clear; echo -e "\n\n\nThere´s no option 4!\nEither fight or flight!";;
 	[9]* ) clear;\
-		docker stop ansible_philote;\
+		docker stop ansible_philote 2> /dev/null;\
 		docker stop bajovnick 2> /dev/null;\
 		docker stop bajovnick_1 2> /dev/null;\
 		docker stop bajovnick_2  2> /dev/null;\
