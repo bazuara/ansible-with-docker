@@ -11,11 +11,11 @@ These are the steps you are going to need to reproduce:
 
 Preparation:
 
-- Connect to your captains console (ssh ender@localhost -p 8022) Remember,
+- Connect to your captains console (ssh ender_wiggin@localhost -p 8022) Remember,
   your ultra secure military-grade encrypted user:password is ender_wiggin:ender
 - Generate your captains credentials (ssh-keygen).
 - Send your credentials to the commanded ships (ssh-copy-id ender@bajovnick).
-- Test secure connections (ssh ender@bajovnick without a password).
+- Test secure connections (ssh ender_wiggin@bajovnick without a password).
 
 Subject:
 
