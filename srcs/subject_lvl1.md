@@ -29,18 +29,17 @@ Subject:
 	  (lineinfile module) 
 	- Ping the Bajovnick ship 
 	  (ping module)
-	- Get the Bajovnick system status
-	  (setup module)
 	- Install nginx server
 	  (yum module)
 	- Delete the /usr/share/nginx/html/index.html file
-	  (shell module)
-	- Link the /sample/index.html to
+	  (file module)
+	- Copy the /sample/index.html to
 	  /usr/share/nginx/html/index.html
+	  (copy module)
+	- Insert hostname at the end of /usr/share/nginx/html/index.html
 	  (shell module)
-	- Edit the /usr/share/nginx/html/index.html to print the ships hostname
-	  (lineinfile module)
 	- Start the nginx server.
+	  (shell module)
 
 - No single command will be allowed, you need to reproduce all the instructions 
   **within a single playbook**.
