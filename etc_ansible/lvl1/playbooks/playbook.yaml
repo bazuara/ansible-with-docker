@@ -1,0 +1,29 @@
+---
+- hosts: fleet
+  become: yes
+  tasks:
+    - name: disable the ssh-login with password 
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "^PasswordAuthentication yes"
+        line: "PasswordAuthentication no"
+        state: present
+    - name: ping all the fleet
+      action: ping
+    - name: install nginx
+      yum:
+        name: nginx
+        state: present
+    - name: delete default index page
+      file:
+        path: /usr/share/nginx/html/index.html
+        state: absent
+    - name: copying index page
+      copy:
+        src: /samples/index.html
+        dest: /usr/share/nginx/html/index.html
+        remote_src: yes
+    - name: insert hostname inside index.html 
+      shell: hostname >> /usr/share/nginx/html/index.html
+    - name: start nginx
+      shell: nginx
