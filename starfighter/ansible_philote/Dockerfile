@@ -25,6 +25,9 @@ RUN touch /home/ender_wiggin/.zshrc
 # Install editing tools
 RUN apt-get install -y vim
 
+# Install sshpass
+RUN apt-get install -y sshpass
+
 # expose ssh port
 EXPOSE 22
 
